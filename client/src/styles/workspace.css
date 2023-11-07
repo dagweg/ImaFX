@@ -114,7 +114,7 @@
 }
 
 .dropdown-menu {
-    background-color: #fff3;
+    background-color: rgb(215, 183, 237);
     margin: 1px;
     @apply w-full h-10 cursor-pointer flex justify-between items-center px-4 rounded-md
 }
@@ -129,7 +129,7 @@
 
 .dropdown-menu-buttons-container {
     cursor: pointer;
-    @apply ml-3 bg-gray-300 bg-opacity-25
+    @apply ml-3 bg-opacity-25
 }
 
 button {
@@ -189,7 +189,7 @@ button:active {
 
 .dropdown-menu-button {
     margin: 1px 0 0 0;
-    @apply w-full h-10 cursor-pointer flex justify-between items-center px-4 rounded-md bg-gray-300 bg-opacity-30
+    @apply w-full h-10 cursor-pointer flex justify-between rounded-md bg-gray-100 items-center px-4 bg-opacity-30
 }
 
 .dropdown-menu:hover,
@@ -200,4 +200,10 @@ button:active {
 
 .dropdown-menu-button:active {
     scale: 0.96;
+}
+
+.dropdown-menu *:not(.fa-solid),
+.dropdown-menu-button * {
+    font-family: 'Roboto';
+    font-size: small;
 }
